@@ -9,7 +9,7 @@ list.files()
 score = read_excel("score_10차시.xlsx")
 score
 
-# DataFrame의 컬럼명을 바꾸는 함수 -> rename()
+# DataFrame의 컬럼명을 바꾸는 함수 -> rename() 
 score=score %>% rename(id=학번, grade= 학년, mid = 중간고사, fin= 기말고사, assign= 과제제출, att=출석점수)  
 #  %>% : 단축키 ctrl+shift+m
 
@@ -26,7 +26,7 @@ score %>% filter(grade ==1 & mid >=25)
 # score %>%  filter(grade==1) %>%  filter(mid>=25)
 
 # 원하는 컬럼만 추출하는 함수 select()
-names(score)
+names(score) 
 score %>% select(grade)
 score %>% select(grade,mid)
 
